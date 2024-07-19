@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 20px;
+    }
+
+    .pricing-plan {
+      flex: 1;
+      max-width: 350px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pricing-plan:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .plan-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #4a4a4a;
+    }
+
+    .plan-price {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ff6600;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: #4a4a4a;
+    }
+
+    .plan-features li {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .plan-button {
+      padding: 15px 30px;
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .plan-button:hover {
+      background-color: #cc5200;
+      transform: translateY(-2px);
+    }
+
+    .plan-button:active {
+      transform: translateY(1px);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+    }
+
+    .footer-text {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .footer-icons {
+      margin: 10px 0;
+    }
+
+    .footer-icons a {
+      margin: 0 10px;
+      color: #ff6600;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-icons a:hover {
+      color: #ff9933;
+    }
+
+    .footer-quote {
+      font-style: italic;
+      margin-bottom: 10px;
+      color: #ff9933;
+    }
+
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$11.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone & Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-quote">"The only way to do great work is to love what you do." - Steve Jobs</p>
+    <div class="footer-icons">
+      <a href="https://twitter.com/DipBrahma5" target="_blank">Twitter</a>
+      <a href="https://www.linkedin.com/in/dip-brahma-620497292" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Dip-driod" target="_blank">GitHub</a>
+    </div>
+    <p class="footer-text">© 2024 Dip Brahma. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
